@@ -1,4 +1,4 @@
 git add .
 git push -u origin main
-enter
+ENTER
 git commit -m "commit"
