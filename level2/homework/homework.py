@@ -2,6 +2,9 @@ from turtle import *
 
 bgcolor("cyan")
 
+apple,pear = "apple","pear"
+
+print(apple + pear)
 
 def draw_rectangle(Size,Position,Fill:bool,Color:str,Fillcolor:str):
 
