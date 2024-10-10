@@ -67,4 +67,6 @@ draw_rectangle([125,100],[0,150],True,"gray","darkgray")
 
 draw_triangle([150,75],[75,162],True,"grey","lightgreen")
 
+draw_rectangle([150,150],[0,-120],True,"gray","black")
+
 exitonclick()
