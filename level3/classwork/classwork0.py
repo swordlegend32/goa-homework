@@ -1,8 +1,3 @@
 
 
-name = "giorgi"
-name = "nika"
-
-print(name)
-
-input("Name: ")
+name = input("Name: ")
