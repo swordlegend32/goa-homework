@@ -1,0 +1,1 @@
+name = str(input("your name: "))
