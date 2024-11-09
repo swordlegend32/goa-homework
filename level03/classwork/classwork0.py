@@ -1,3 +1,1 @@
-
-
-name = input("Name: ")
+#no classwork
