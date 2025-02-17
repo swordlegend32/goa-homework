@@ -11,14 +11,13 @@ def GetGroups(Students):
     AllStudents = []
     NumberOfGroups = 0
     MinGroups = 1
-    HighestStudentsPerGroup = 0
 
     for i in range(MinGroups, 9999):
         StudentsPerGroup = 3
         NumberOfGroups =  math.ceil(len(Students) / StudentsPerGroup)
 
     print(f"ჯგუფების რაოდენობა: {NumberOfGroups}")
-    print(f"მოსწავლე ყოველ ჯგუფში: {HighestStudentsPerGroup}")
+    print(f"მოსწავლე ყოველ ჯგუფში: {StudentsPerGroup}")
 
     Counting = (5,4,3,2,1)
     
@@ -77,24 +76,27 @@ def GetGroups(Students):
 
 
 
-
-goa_group57_students = ["თორნიკე ბერიძე", "ნიკა დობო", "გიორგი თედოზაშვილი", "ლაშაგიორგი", "ალექსანდრე კეკოშვილი",   "ნიკა გიგოშვილი", "ლუკა გიგოშვილი","ბექა ვარდუკაძე", "ბუბუნაური", "გვანცა კოპაძე", "გიორგი გუგავა", "გიორგი მოდებაძე", "ნიკა ტაბატაძე", "ქეთევან მახარაშვილი", "დიანა ძუკაევი", "ირაკლი ახალაია", "გიორგი კაციტაძე", "თორნიკე ზუბიაშვილი", "ლუკა კელეპტრიშვილი", "თორნიკე ხურცია", "ლაშა კაჭიური"]
+# ,"Random IG","Random again ig","თორნიკე ბერიძე", "ნიკა დობო", "გიორგი თედოზაშვილი", "ლაშაგიორგი", "ალექსანდრე კეკოშვილი",   "ნიკა გიგოშვილი", "ლუკა გიგოშვილი","ბექა ვარდუკაძე", "ბუბუნაური", "გვანცა კოპაძე", "გიორგი გუგავა", "გიორგი მოდებაძე", "ნიკა ტაბატაძე", "ქეთევან მახარაშვილი", "დიანა ძუკაევი", "ირაკლი ახალაია", "გიორგი კაციტაძე", "თორნიკე ზუბიაშვილი", "ლუკა კელეპტრიშვილი", "თორნიკე ხურცია", "ლაშა კაჭიური"
+goa_group57_students = [i for i in range(100)]
 
 print(len(goa_group57_students))
 
 Grouped,all = GetGroups(goa_group57_students)
 
-# for i in Grouped:
-#     for x in i:
-#         if x not in goa_group57_students:
-#             print(x)
-#             print("შეცდომა")
-#             break
+def Tests():
+    print("Testing")
 
-for i in goa_group57_students:
-    if i not in all:
-        print(i)
-        print("შეცდომა")
+    print("Test 1 Passed")
+
+    for i in goa_group57_students:
+        if i not in all:
+            print(i)
+            print("Test 2 Failed")
+            return
+        
+    print("Test 2 Passed")
+
+Tests()
 
 
 def ChooseLeader(Group):
