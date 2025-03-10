@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Desing.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+        <div>
+            <form id="loginForm">
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;" class="TextInput" type="text" placeholder="Enter your username">
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;" class="TextInput" type="password" placeholder="Enter your password">
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;" class="submitButton" type="button" value="Login" onclick="switchToSignup()">
+            </form>
+            <form id="signupForm" class="hidden">
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;" class="TextInput" type="email" placeholder="Enter your email">
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;" class="TextInput" type="text" placeholder="Enter your phone number">
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;"class="submitButton" type="button" value="Signup" onclick="switchToLogin()">
+            </form>
+        </div>
+    </main>
+
+    <video></video>
+    <source>
+    <img>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+    <script>
+        function switchToSignup() {
+            document.getElementById('loginForm').classList.add('hidden');
+            document.getElementById('signupForm').classList.remove('hidden');
+            document.getElementById('signupForm').classList.add('slideIn');
+        }
+
+        function switchToLogin() {
+            document.getElementById('signupForm').classList.add('hidden');
+            document.getElementById('loginForm').classList.remove('hidden');
+            document.getElementById('loginForm').classList.add('slideIn');
+        }
+    </script>
+
+</body>
+</html>
