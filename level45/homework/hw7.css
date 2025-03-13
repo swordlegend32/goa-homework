@@ -1,21 +1,21 @@
 d1{
     margin: 50px;
     padding: 30px;
-    border: 5px solid rgb(255, 0, 0);
+    border: 5px solid rgb(20, 8, 17);
     width: 200px;
     height: 200px;
 }
 d2{
     margin: 30px;
     padding: 50px;
-    border: 7px solid rgb(32, 2, 85);
+    border: 7px solid rgb(49, 22, 95);
     width: 200px;
     height: 200px;
 }
 d3{
     margin: 20px;
     padding: 20px;
-    border: 8px solid rgb(0, 128, 0);
+    border: 8px solid rgb(104, 46, 28);
     width: 200px;
     height: 200px;
 }
