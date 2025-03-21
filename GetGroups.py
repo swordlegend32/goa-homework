@@ -87,11 +87,6 @@ def GetGroups(Students):
 
 
 
-
-
-
-
-
 goa_group57_students = [i for i in range(100)]
 
 Grouped, all = GetGroups(goa_group57_students)
