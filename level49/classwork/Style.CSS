@@ -1,0 +1,110 @@
+body{
+    background-color: hsl(0, 0%, 8%);
+}
+
+#MidDiv{
+    width: 282px;
+    height: 440px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 41px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 12%) ;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+button{
+    margin: 7px;
+    height: 35px;
+    width: 225px;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 95%);
+    border: 0px;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(80, 43%, 3%);
+}
+
+button:active{
+    background-color: hsl(75, 83%, 31%);
+    color: hsl(80, 43%, 3%);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img{
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+#Name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: hsl(0, 0%, 95%);
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+#POL{
+    margin: 0px;
+    font-size: 10px;
+    margin-bottom: -13px;
+    color: hsl(75, 94%, 57%);
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#Bio{
+    margin-top: 25px;
+    margin-bottom: 3px;
+    font-size: 11px;
+    color: hsl(0, 0%, 95%);
+    font-family: sans-serif;
+    padding: 10px;
+    width: 215px;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    #MidDiv {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #Name {
+        font-size: 18px;
+    }
+
+    #Bio {
+        font-size: 10px;
+        width: 100%;
+    }
+}
