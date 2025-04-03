@@ -1,0 +1,27 @@
+
+.box1, .box2 {
+    width: 200px;
+    height: 200px;
+    position: absolute; 
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(214, 79, 79);
+}
+
+
+.box1 {
+    background-color: red;
+    left: 150px;
+    top: 200px;
+    z-index: 2;  
+}
+
+
+.box2 {
+    background-color: blue;
+    left: 100px; 
+    top: 50px; 
+    z-index: 1;
+}
