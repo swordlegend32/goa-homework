@@ -6,12 +6,12 @@ import sys
 
 StudentsToGroup = [i for i in range(50)]
 
-def GetGroups(Students):
+def GetGroups(Students,SPG):
     Groups = []
     AllStudents = []
     NumberOfGroups = 0
     MinGroups = 1
-    StudentsPerGroup = 2
+    StudentsPerGroup = SPG
 
     NumberOfGroups =  math.ceil(len(Students) / StudentsPerGroup)
 
@@ -49,46 +49,45 @@ def GetGroups(Students):
     for i in range(NumberOfGroups):
         Groups.append([])
 
-    Priority_Students = ["გიორგი თედოზაშვილი", "ნიკა დობო","თორნიკე ბერიძე"]
+    Priority_Students = ["გიორგი თედოზაშვილი", "ნიკა დობო"]
     group = random.choice(Groups)
     for i in range(NumberOfGroups):
         group = random.choice(Groups)
-
     for i in Priority_Students:
-        if i in Students:
-            if len(group) < StudentsPerGroup:
-                print(len(group), StudentsPerGroup)
-                group.append(i)
-                Students.remove(i)
-                AllStudents.append(i)
+        if len(group) < StudentsPerGroup:
+            group.append(i)
+            # Students.pop(Students.index(i))
+            AllStudents.append(i)
 
     Index = 0
     while len(Students) > 0:
+        
+        if Index == NumberOfGroups:
+                Index = 0
+
+        Random = random.choice(Students)
+        if Random in AllStudents:
+            Students.remove(Random)
+            continue
+        Groups[Index].append(Random)
+        AllStudents.append(Random)
+        Students.remove(Random)
+
+        Index += 1
+
+        if Index == NumberOfGroups:
+                Index = 0
+
         if len(Groups[Index]) >= StudentsPerGroup:
             Index += 1
             if Index == NumberOfGroups:
                 Index = 0
-            continue    
-        Random = random.choice(Students)
-        Groups[Index].append(Random)
-        AllStudents.append(Random)
-        Students.remove(Random)
-        Index += 1
-        if Index == NumberOfGroups:
-            Index = 0
+            continue  
 
     return Groups, AllStudents
 
 
-
-
-
-
-
-
 def ChooseLeader(Group):
-    if "გიორგი თედოზაშვილი" in Group:
-        return "გიორგი თედოზაშვილი"
     LeaderIndex = random.randint(0, len(Group) - 1)
     return Group[LeaderIndex]
 
@@ -216,15 +215,29 @@ def Tests(goa_group57_students, Grouped, all):
 
 
 
-goa_group57_students = ["თორნიკე ბერიძე", "ნიკა დობო", "გიორგი თედოზაშვილი", "ლაშაგიორგი", "ალექსანდრე კეკოშვილი",   "ნიკა გიგოშვილი", "ლუკა გიგოშვილი","ბექა ვარდუკაძე", "ბუბუნაური", "გვანცა კოპაძე", "გიორგი გუგავა", "გიორგი მოდებაძე", "ნიკა ტაბატაძე", "ქეთევან მახარაშვილი", "დიანა ძუკაევი", "ირაკლი ახალაია", "გიორგი კაციტაძე", "თორნიკე ზუბიაშვილი", "ლუკა კელეპტრიშვილი", "თორნიკე ხურცია", "ლაშა კაჭიური"]
+goa_group57_students = ["თორნიკე ბერიძე",
+"დიანა ძუკაევი",
+"ლუკა კელეპტრიშვილი",
+"jorj kacitadze",
+"გვანცა კოპაძე" ,
+"გიორგი გუგავა",
+"ლაშა კაჭიური",
+"ნიკა გიგოშვილი",
+"ლუკა გიგოშვილი"
+"თორნიკე ზუბიაშვილი",
+"საბა რუსიეშვილი"
+"გიორგი ჩადუნელი"
+"ნიკა დობო"
+"ქეთევან მახარაშვილი",
+"გიორგი თედოზაშვილი"
+"ლუკა მიქუტიშვილი",]
 
-Grouped, all = GetGroups(goa_group57_students)
+Grouped, all = GetGroups(goa_group57_students,3)
 
 
 
 Tests(goa_group57_students, Grouped, all)
 
-
+print(Grouped)
 for i in Grouped:
     print(f"Group {Grouped.index(i) + 1}: {i}")
-    print(f"Leader: {ChooseLeader(i)}")
