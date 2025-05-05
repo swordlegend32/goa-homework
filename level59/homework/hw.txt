@@ -1,0 +1,7 @@
+2) ახსენით რა არის transition და რისთვის ვიყენებთ. განმარტეთ თითოეული ქვე-კუთვნილება: transition-duration, transition-property, transition-timing-function
+
+
+transition - გარდამავალი
+duration - ხანგრძლივობა
+transition-delay - გადასვლის დაყოვნება
+trigger - გამომწვევი

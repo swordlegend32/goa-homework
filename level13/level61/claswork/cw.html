@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            background-color: red;
+            animation: move infinite 3s;
+        }
+
+        @keyframes move {
+            10% {
+                opacity: 30%;
+                width: 250px;
+                height: 250px;
+                transform: rotate(100px) translate(50px 45px);
+                margin-top: 150px;
+                background-color: rgb(62, 30, 143);
+            }
+
+            30% {
+                opacity: 50%;
+                width: 650px;
+                height: 150px;
+                transform: rotate(11180px) translate(1000px 445px);
+                margin-top: 100px;
+                background-color: rgb(30, 143, 51);
+            }
+
+            50% {
+                opacity: 50%;
+                width: 150px;
+                height: 350px;
+                transform: rotate(1180px) translate(100px 745px);
+                margin-top: 160px;
+                background-color: rgb(135, 115, 143);
+            }
+
+            70% {
+                opacity: 70%;
+                width: 750px;
+                height: 850px;
+                transform: rotate(180px) translate(100px 45px);
+                margin-top: 160px;
+                background-color: rgb(54, 36, 60);
+            }
+
+            100% {
+                opacity: 100%;
+                width: 450px;
+                height: 750px;
+                transform: rotate(1800px) translate(200px 145px);
+                margin-top: 160px;
+                background-color: rgb(93, 55, 105);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box"></div>
+</body>
+
+</html>

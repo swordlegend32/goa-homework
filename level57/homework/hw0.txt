@@ -1,0 +1,20 @@
+2) ახსენით რა არის pseudo კლასები და რისთვის ვიყენებთ. განმარტეთ თითოეული ფსეუდო-კლასი: hover, active, focus
+
+hover aris rodesac mause mivitant da ise ragac daemarteba elemnts
+
+active dawerisas rame daemrtos
+
+focus roca gaaqtiurebulia rame daemastos 
+
+
+
+
+3) ახსენით რა არის transform და მისი მეთოდები (translate, scale, rotate, skew) დაწერეთ რისთვის ვიყენებთ
+
+translate rom gadavaadgilot
+
+scale zoma rom gavzardot
+
+rotate rom davatrialot
+
+skew rom gavwelot

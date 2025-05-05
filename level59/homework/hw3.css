@@ -1,0 +1,31 @@
+body {
+  background: #0d141c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 100px;
+  color: white;
+}
+.main{
+    background: #313b46;
+    border: 2px white solid;
+    width: 1000px;
+    height: 150px;
+    border-radius: 50px;
+}
+.son{
+    background: white;
+    width: 150px;
+    height: 140px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: all 3s;
+}
+.son:hover{
+    width: 990px;
+    background: rgb(255, 0, 0);
+}
