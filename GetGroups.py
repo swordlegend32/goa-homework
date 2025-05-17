@@ -43,16 +43,6 @@ def GetGroups(Students, SPG):
     for i in range(NumberOfGroups):
         Groups.append([])
 
-    Priority_Students = ["გიორგი თედოზაშვილი", "ნიკა დობო"]
-
-    for i in Priority_Students:
-        if i in Students:
-            Students.remove(i)
-
-    PriorityGroupIndex = random.randint(0, NumberOfGroups - 1)
-    Groups[PriorityGroupIndex].extend(Priority_Students)
-    AllStudents.extend(Priority_Students)
-
     Index = 0
     while len(Students) > 0:
         if Index == NumberOfGroups:
@@ -128,26 +118,23 @@ def Tests(goa_group57_students, Grouped, all):
 
 
 
-
-
 goa_group57_students = ["თორნიკე ბერიძე",
-"დიანა ძუკაევი",
-"ლუკა კელეპტრიშვილი",
-"jorj kacitadze",
-"გვანცა კოპაძე",
-"გიორგი გუგავა",
-"ლაშა კაჭიური",
-"ნიკა გიგოშვილი",
-"ლუკა გიგოშვილი",
-"თორნიკე ზუბიაშვილი",
-"საბა რუსიეშვილი",
-"გიორგი ჩადუნელი",
-"ნიკა დობო",
-"ქეთევან მახარაშვილი",
-"გიორგი თედოზაშვილი",
-"ლუკა მიქუტიშვილი"]
+        "დიანა ძუკაევი",
+        "ლუკა კელეპტრიშვილი",
+        "jorj kacitadze",
+        "გიორგი გუგავა",
+        "ნიკა გიგოშვილი",
+        "თორნიკე ზუბიაშვილი",
+        "გიორგი ჩადუნელი",
+        "ქეთევან მახარაშვილი",
+        "ნიკა ტაბატაძე",
+        "გიორგი მოდებაძე",
+        "სოფო რატიანი",
+        "გიორგი თედოზაშვილი",
+        "ნიკა დობო"
+]
 
-Grouped, all = GetGroups(goa_group57_students, 4)
+Grouped, all = GetGroups(goa_group57_students, 3)
 
 Tests(goa_group57_students, Grouped, all)
 
