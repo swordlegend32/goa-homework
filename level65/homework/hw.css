@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+body{
+    display: flex;
+    justify-content: center;
+}
+div {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: red;
+  border-radius: 20px;
+
+}
+h1 {
+  text-decoration: line-through purple;
+  font-family: "Poetsen One", sans-serif;
+}
+img{
+    width: 100%;
+}
+button{
+    width: 50px;
+    height: 30px;
+}

@@ -1,0 +1,21 @@
+* {
+  font-size: 20px;
+  color: rgb(8, 0, 255);
+  font-weight: 100;
+}
+div {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: red;
+  border-radius: 20px;
+}
+#h {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+}
