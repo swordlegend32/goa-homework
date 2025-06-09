@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .top {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+section {
+  width: 400px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+}
+
+section h1 {
+  padding-top: 30px;
+  color: hsl(223, 47%, 23%);
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+section .info {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  padding: 0px 31px;
+  font-size: 0.94rem;
+  line-height: 25px;
+}
+
+section .music {
+  width: 80%;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: start;
+  align-items: center;
+  gap: 80px;
+}
+
+section .music-price {
+  display: flex;
+  text-align: start;
+  align-items: center;
+  gap: 15px;
+}
+
+section .music .price img {
+  width: 50px;
+  height: auto;
+}
+
+section .music .price h2 {
+  color: hsl(223, 47%, 23%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+section .music .price p {
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+  font-weight: 500;
+}
+section .music a {
+  color: hsl(245, 75%, 52%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+section button {
+  width: 80%;
+  height: 40px;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 10px;
+  color: hsl(225, 100%, 94%);
+  font-weight: 700;
+  box-shadow: 0 5px 20px hsl(226, 67%, 83%);
+  margin-top: 10px;
+}
+
+section .cancel {
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
