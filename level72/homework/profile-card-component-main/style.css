@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+body .bk {
+  position: absolute;
+  z-index: -1;
+}
+body .top {
+  left: -225px;
+  top: -550px;
+}
+body .botton {
+  right: -225px;
+  bottom: -600px;
+}
+section {
+  width: 400px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+}
+section .image img {
+  width: 100%;
+  position: relative;
+}
+section .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -62.5px;
+}
+section .main .profil {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 120px;
+}
+section .main h1 {
+  padding: 20px 0px 10px 0px;
+  display: flex;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: hsl(229, 23%, 23%);
+}
+section .main h1 p {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+section .main .locate {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  padding-bottom: 20px;
+}
+
+section .main .info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  position: relative;
+  top: 30px;
+}
+
+section .main .info div h2 {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+section .main .info div p {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* 
+font-family: "Montserrat", sans-serif;
+font-family: "Fraunces", serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 800px;
+  height: 550px;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+section .product {
+  width: 50%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+}
+.main h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0px 40px;
+  margin-top: 40px;
+  letter-spacing: 5px;
+}
+.main h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2.68rem;
+  padding: 30px 40px;
+  line-height: 40px;
+  color: hsl(212, 21%, 14%);
+}
+
+.main .info {
+  padding: 0px 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  font-size: 1.15rem;
+  line-height: 27px;
+}
+
+.main .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .price .new-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 30px 40px;
+  color: hsl(158, 36%, 37%);
+}
+.main .price .old-price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.main button {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 0px 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.main button:hover {
+  background-color: hsl(158, 42%, 18%);
+}
