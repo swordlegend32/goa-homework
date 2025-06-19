@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  width: 700px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+
+section .result {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  width: 50%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+section .result h1 {
+  margin-top: 25px;
+  color: hsl(241, 100%, 89%);
+}
+section .result .circle {
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .result .circle h2 {
+  color: hsl(221, 100%, 96%);
+  font-size: 4rem;
+}
+section .result .circle p {
+  color: hsl(241, 100%, 89%);
+  font-weight: 200;
+}
+section .result h2 {
+  color: hsl(221, 100%, 96%);
+  font-size: 2rem;
+}
+section .result p {
+  color: hsl(241, 100%, 89%);
+  padding: 0px 60px;
+  margin-bottom: 40px;
+}
+
+section .summary {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section .summary h1 {
+  color: hsl(224, 30%, 27%);
+  padding: 30px 0px 10px 30px;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+section .summary .info {
+  margin: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+section .summary .info .box {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+section .summary .info .rec {
+  background-color: hsla(0, 100%, 67%, 0.2);
+  font-size: 1rem;
+}
+
+section .summary .info .rec h2 {
+  color: hsl(0, 100%, 67%);
+}
+
+section .summary .info .mem {
+  background-color: hsla(39, 100%, 56%, 0.2);
+  font-size: 1rem;
+}
+
+section .summary .info .mem h2 {
+  color: hsl(39, 100%, 56%);
+}
+
+section .summary .info .ver {
+  background-color: hsla(166, 100%, 37%, 0.2);
+  font-size: 1rem;
+}
+
+section .summary .info .ver h2 {
+  color: hsl(166, 100%, 37%);
+}
+
+section .summary .info .vis {
+  background-color: hsla(234, 85%, 45%, 0.2);
+  font-size: 1rem;
+}
+
+section .summary .info .vis h2 {
+  color: hsl(234, 85%, 45%);
+}
+
+section .summary .info p {
+  color: hsl(222, 20%, 73%);
+}
+
+section .summary .info b {
+  color: hsl(224, 30%, 21%);
+}
+
+section .summary button {
+  width: 80%;
+  height: 50px;
+  margin: 15px auto;
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+section .summary button:hover {
+  background-color: hsl(224, 53%, 35%);
+}
