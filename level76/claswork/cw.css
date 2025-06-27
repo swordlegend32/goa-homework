@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+section {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(100, 10px);
+  grid-template-rows: repeat(100, 10px);
+}
+
+.div1 {
+  grid-row: 70/93;
+  background-color: red;
+  grid-column: 91;
+  transform: rotate(-5deg);
+}
+
+.div2 {
+  grid-row: 70/93;
+  background-color: red;
+  grid-column: 89;
+  transform: rotate(-3deg);
+}
