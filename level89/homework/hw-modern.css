@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #222;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    border-radius: 0 0 32px 32px;
+    padding-bottom: 2rem;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem 1rem 3rem;
+}
+.head h1 {
+    font-size: 2.2rem;
+    color: #2b5a83;
+    letter-spacing: 2px;
+}
+nav {
+    display: flex;
+    gap: 2rem;
+}
+nav a {
+    text-decoration: none;
+    color: #03dac6;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #6200ea;
+}
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 3rem;
+}
+.title {
+    flex: 1 1 350px;
+    margin-right: 2rem;
+}
+.title h1 {
+    font-size: 2.5rem;
+    color: #6200ea;
+    margin-bottom: 1rem;
+}
+.title p {
+    font-size: 1.2rem;
+    color: #2b5a83;
+    margin-bottom: 1.5rem;
+}
+.title button {
+    background: #03dac6;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s;
+}
+.title button:hover {
+    background: #6200ea;
+}
+.containers {
+    flex: 1 1 350px;
+    background: #f0f0f0;
+    border-radius: 24px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.containers h3 {
+    color: #2b5a83;
+    margin-bottom: 1rem;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+.content div {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.content img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+.About-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 32px;
+    margin: 2rem 3rem;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 2rem 3rem;
+}
+#AboutLeft {
+    flex: 1 1 350px;
+    margin-right: 2rem;
+}
+#AboutLeft h1 {
+    color: #03dac6;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#AboutLeft p {
+    color: #2b5a83;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+#AboutLeft button {
+    background: #6200ea;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s;
+}
+#AboutLeft button:hover {
+    background: #03dac6;
+}
+#AboutRight {
+    flex: 1 1 350px;
+    background: #f0f0f0;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Percentage {
+    font-size: 2.5rem;
+    color: #6200ea;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#AboutRight img {
+    width: 120px;
+    margin-bottom: 1rem;
+}
+#Total {
+    font-size: 1.3rem;
+    color: #2b5a83;
+    margin-bottom: 1rem;
+}
+#Total span {
+    font-size: 0.9rem;
+    color: #03dac6;
+    margin-left: 8px;
+}
+section {
+    text-align: center;
+    margin-top: 1rem;
+}
+section img {
+    width: 32px;
+    height: 32px;
+    background: #6200ea;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+section h2 {
+    color: #03dac6;
+    font-size: 1rem;
+    font-weight: 600;
+}
+@media (max-width: 900px) {
+    .bottom, .About-us {
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .head {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    #AboutLeft, #AboutRight, .title, .containers {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+}
